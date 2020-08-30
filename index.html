@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Roll the dice</title>
+    <link rel="stylesheet" href="rollthedice.css" />
+  <!--   <link rel="stylesheet" type="text/css" href="../../css/style.css" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+
+       <div class="navbar">
+      <h3>manuela@codefactory2020</h3>
+    </div>
+
+    <header>
+
+      <div id="logo">
+        <h1>Roll the Dice</h1>
+      </div>
+    </header>
+
+<div class="new">
+
+    <div id="top">
+        <form name="input">
+          <input type="text" id="namePlayerOne" placeholder="NamePlayerOne" />
+          <input type="text" id="namePlayerTwo" placeholder="NamePlayerTwo" />
+          <input type="text" id="amountDices" placeholder="How many Dices?" />
+          <p id="error"></p>
+
+          <button id="button" onclick="return startGame()">Customize</button>
+        </form>
+
+    </div>
+</div>
+
+    <div id="wrapper1">
+
+
+      <div id="wrapper">
+        <div id="board_left" class="board">
+          <div>
+            <h1>PLAYER ONE</h1>
+
+            <h2 id="p1_name">Name Player One</h2>
+          </div>
+
+          <div>
+            <button
+              id="roll1"
+              class="button"
+              onclick="return rollDicesPlayerOne()"
+            >
+              Let's Roll
+            </button>
+          </div>
+
+          <div id="dice_left" class="dice"></div>
+
+          <div id="feedback1" class="fb"></div>
+
+          <div>
+            <h2 id="sumPlayerOne">SumPlayer1</h2>
+          </div>
+        </div>
+
+        <div id="board_right" class="board">
+          <div>
+            <h1>PLAYER TWO</h1>
+
+            <h2 id="p2_name">Name Player Two</h2>
+          </div>
+
+          <div>
+            <button
+              id="roll2"
+              class="button"
+              onclick="return rollDicesPlayerTwo()"
+            >
+              Let's Roll
+            </button>
+          </div>
+
+          <div id="dice_right" class="dice"></div>
+          <div id="feedback2" class="fb"></div>
+
+          <div>
+            <h2 id="sumPlayerTwo">SumPlayer2</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ 
+
+    <script src="rollthedice.js"></script>
+  </body>
+</html>
